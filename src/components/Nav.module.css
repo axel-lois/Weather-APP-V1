@@ -1,0 +1,68 @@
+
+
+.nav {
+  display: flex;
+  background-color: rgb(44, 43, 43);
+  height: 60px;
+  margin-bottom: 50px;
+box-shadow:1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+}
+
+.logo {
+  height: 70%;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 7px;
+  display: flex;
+  letter-spacing: 0.5 ;
+}
+
+
+
+.logo h5 {
+  color: #fff;
+text-align: center;
+line-height: 45px;
+font-weight:bold;
+margin-left: 25px;
+}
+
+
+
+.about_container {
+  width: 200px;
+  display: flex;
+  line-height: 62px;
+}
+
+.about_span {
+  display: inline;
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight:bold;
+  transition: all 0.4s ease-in-out;
+}
+.about_span:hover {
+  color: #2a8c88;
+}
+
+.nav_links {
+  text-decoration: none !important;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav_links:hover{
+  color: #2a8c88;
+}
+
+@media screen and (max-width: 800px) {
+  .logo h5 {
+   font-size: 16px;
+  }
+  .about_span{
+    font-size: 16px;
+    margin-left: -100px;
+  }
+}
+

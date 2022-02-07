@@ -1,0 +1,12 @@
+
+.container {
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.h2 {
+    color: white;
+    font-weight: bold;
+}
