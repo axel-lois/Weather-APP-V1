@@ -20,7 +20,7 @@ const Ciudad = (props) => {
         </div>
       </div>
     </div>
-    <NavLink to="/">
+    <NavLink to="/Weather-App-V1/">
     <button className={Classes.button}>Go back </button>
     </NavLink>
     </Fragment>

@@ -9,13 +9,15 @@ import Ciudad from "./components/Ciudad";
 function App() {
   const API_KEY = "a372ef436031a88db0e0f58be33ea056";
   const [cities, setNewCity] = useState([]);
+  console.log(cities)
 
   async function getCity(city) {
     try {
       const data = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
       );
       const response = await data.json();
+      console.log(response)
       return response;
     } catch (error) {
       console.error(error.message);
@@ -40,6 +42,7 @@ function App() {
       } else if (response.main === undefined) {
         alert("Requested city not found.");
       } else {
+        console.log('Ciudad ingresada!')
         setNewCity((prevCities) => [response, ...prevCities]);
       }
     });
@@ -55,8 +58,7 @@ function App() {
       <Route path="/" render={() => <Nav onSearch={onSearch} />} />
       <Route path="/about" render={About} />
       <Route
-        exact
-        path="/"
+        path="/Weather-App-V1/"
         render={() => <Cards onClose={onClose} cities={cities} />}
       ></Route>
       <Route

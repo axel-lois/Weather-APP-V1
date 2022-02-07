@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 function Nav({ onSearch }) {
   return (
     <nav className={NavCSS.nav}>
-      <NavLink style={{textDecoration:'none'}} to="/">
+      <NavLink style={{textDecoration:'none'}} to="/Weather-App-V1/">
         <div className={NavCSS.logo}>
           <h5 className={NavCSS.nav_links}>Weather App - Home</h5>
         </div>
